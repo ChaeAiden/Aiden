@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		</style>
+	</head>
+
+	<body>
+		<!--
+		<h1 id="aiden" onClick="changeColor('blue')">Hello</h1>					
+
+		<h2 id='aiden' onClick="changeColor('green')">World</h2>
+
+		<button>Button</button>
+		<input>
+		-->
+
+
+
+
+		<!-- Authentication
+			Code another Calculator on my own
+			Match the ID and PASS
+				If it's not right say ("GO AWAY!") -->
+
+
+
+
+
+
+		<input id="first">
+		<input id="second">
+		<button onClick="plusFunction()">+</button>
+		<button onClick="minusFunction()">-</button>
+		<button onCLick="timesFunction()">X</button>
+		<button onClick="divisionFunction()">/</button>
+		<hr>
+		<p id="answer"></p>
+
+	<script src="./calculator.js"></script>
+	<script>
+		var dbArray =["Aiden", "Jeff", "Dad", "Mom", "Sister"]
+		var passwordArray =["aaa", "bbb", "ccc", "ddd","eee"]
+		var trigger = 0 
+
+		while(true){
+
+
+			if(trigger ==1){
+				break
+			}
+
+			var userId = prompt("What is your Id?")
+			//var password = prompt("What is your password?")
+			if(dbArray.includes(userId)){
+				// after checking ID
+				alert("Welcome "+userId)
+				// you have to get the index number for userId
+				
+				var userIdIndex =dbArray.indexOf(userId)
+				
+
+				while(true) {
+					var password =  prompt("What is your Password?")
+			
+					var userPassIndex = passwordArray.indexOf(password)
+					if (userIdIndex == userPassIndex){
+						alert("You are logged in!")
+						trigger=1
+						break;
+
+					} else {
+						alert("You're Password doesn't match")
+					}
+				}
+
+
+
+				// if(passwordArray.includes(password)){
+				// 	alert("you are logged in")
+				// } else {
+				// 	alert("Please type in your password again")
+				// }
+
+
+
+			} else {
+				alert("Please type Id correctly ")
+			}	
+
+
+		}
+		
+
+		
+
+		
+
+
+
+
+		// 0. ask the user to type the password and save it into a variable. 
+		// 1. check if the password is correct
+			// - how to check if the password is correct
+			// -- a. look in to the passward array
+
+			// -- b. compare if the user's password and the password from the database matches
+			// -- c. if it is right, "Say Welcome",
+			// -- d. if it is wrong, ask the user to type password again.
+
+		// if(dbArray[0] === userId){
+		// 	alert("You are Welcome "+userId)
+		// } else if (dbArray[1] === userId ){
+		// 	alert("You are Welcome "+userId)
+		// } else {
+		// 	alert('Please type again')
+		// }
+
+		// if userId = dbArray (
+		// 	alert("You are welcome to this website")
+		// else :
+		// 	alert("Please try again")
+		// 	)
+
+	</script>
+</body>
+
+</html>
+
