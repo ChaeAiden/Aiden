@@ -2,6 +2,63 @@
 <html>
 	<head>
 		<style>
+			img {
+				width: 100px;
+				position: absolute;
+				left:0;
+
+			}
+			#aiden {
+				background-color: rgb(78, 127, 68);
+			}		
+			#name {
+				background-color: rgb(49, 61, 184);
+			}
+			#word {
+				background-color: rgb(197, 29, 44)
+			}
+			#time {
+				background-color: rgb(230, 142, 60)
+			}
+			#border{
+				border: 3px solid red;
+				padding: 10px 0 50px 0;
+				padding-top: 10px;
+				padding-right: 0px;
+				padding-bottom: 50px;
+				padding-left: 0px ;
+			}
+			.two {
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+			.three {
+				margin-left: 200px;
+				margin-top: 200px;
+			}
+			.four {
+				margin-left: 300px;
+				margin-top: 300px;
+			}
+			.five {
+				margin-left: 400px;
+				margin-top: 400px;
+			}
+			.six {
+				margin-left: 300px;
+				margin-top: 100px;
+			}
+			.seven {
+				margin-left: 400px;
+			}
+			.eight {
+				margin-top: 300px;
+				margin-left: 100px;
+			}
+			.nine {
+				margin-top: 400px;
+			}
+
 		</style>
 	</head>
 
@@ -26,70 +83,31 @@
 
 
 
-
-
+		<div id="border">This is a Div</div>
+		<br>
+		<br>
 		<input id="first">
 		<input id="second">
-		<button onClick="plusFunction()">+</button>
-		<button onClick="minusFunction()">-</button>
-		<button onCLick="timesFunction()">X</button>
-		<button onClick="divisionFunction()">/</button>
+		<button id='aiden' onClick="plusFunction()">+</button>
+		<button id='name' onClick="minusFunction()">-</button>
+		<button id='word' onCLick="timesFunction()">X</button>
+		<button id='time' onClick="divisionFunction()">/</button>
 		<hr>
 		<p id="answer"></p>
+		<img class="one" src = "./images/fireSpirit.png"/>
+		<img class="two" src = "./images/moonlight.jpeg"/>
+		<img class="three" src = "./images/windArcher.png"/>
+		<img class="four" src = "./images/seaFairy.png"/>
+		<img class="five" src = "./images/pineDragon.webp"/>
+		<img class="six" src = "./images/darkCacao.png"/>
+		<img class="seven" src = "./images/holyBerry.jpeg"/>
+		<img class="eight" src = "./images/pureVanilla.webp"/>
+		<img class="nine" src = "./images/goldenCheese.png"/>
 
-	<script src="./calculator.js"></script>
-	<script>
-		var dbArray =["Aiden", "Jeff", "Dad", "Mom", "Sister"]
-		var passwordArray =["aaa", "bbb", "ccc", "ddd","eee"]
-		var trigger = 0 
+		
+	<script src="./JS/calculator.js"></script>
+	<!--<script src="./JS/login.js">-->
 
-		while(true){
-
-
-			if(trigger ==1){
-				break
-			}
-
-			var userId = prompt("What is your Id?")
-			//var password = prompt("What is your password?")
-			if(dbArray.includes(userId)){
-				// after checking ID
-				alert("Welcome "+userId)
-				// you have to get the index number for userId
-				
-				var userIdIndex =dbArray.indexOf(userId)
-				
-
-				while(true) {
-					var password =  prompt("What is your Password?")
-			
-					var userPassIndex = passwordArray.indexOf(password)
-					if (userIdIndex == userPassIndex){
-						alert("You are logged in!")
-						trigger=1
-						break;
-
-					} else {
-						alert("You're Password doesn't match")
-					}
-				}
-
-
-
-				// if(passwordArray.includes(password)){
-				// 	alert("you are logged in")
-				// } else {
-				// 	alert("Please type in your password again")
-				// }
-
-
-
-			} else {
-				alert("Please type Id correctly ")
-			}	
-
-
-		}
 		
 
 		
@@ -97,7 +115,7 @@
 		
 
 
-
+		<!--
 
 		// 0. ask the user to type the password and save it into a variable. 
 		// 1. check if the password is correct
@@ -123,6 +141,7 @@
 		// 	)
 
 	</script>
+-->
 </body>
 
 </html>

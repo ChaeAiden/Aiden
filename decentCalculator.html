@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.numberBox {
+				background-color: red;
+				width: 50%;
+				height: 100px;
+			}
+			.basic {
+				background-color: black;
+				width: 50%;
+				height: 100px;
+				margin-top: 10px;
+			}
+			.basicInside {
+				background-color: blue;
+				display: inline-block;
+				width: 20%;
+				height: 100px;
+				font-size: 50px;
+				padding-top: 10px;
+				text-align: center;
+				border-radius: 50%;
+			}
+			.basicInside:hover {
+				opacity: 0.7;
+			}
+
+			.greenBackground {
+				background-color: rgb(10, 145, 26);
+			}
+			
+			.orangeBackground{
+				background-color: rgb(255, 162, 0);
+			}
+			.purpleBackground{
+				background-color: rgb(179, 0, 255);
+			}
+			
+			.blueBackground{
+				background-color: rgb(0, 47, 255);
+			}
+			.zeroDiv{
+				width: 41%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="numberBox"></div>
+		<div class="basic">
+			<div class="basicInside greenBackground">AC</div>
+			<div class="basicInside orangeBackground">+/-</div>
+			<div class="basicInside purpleBackground">%</div>
+			<div class="basicInside blueBackground">/</div>
+		</div>
+		<div class="basic">
+			<div class="basicInside greenBackground" onclick = sevenFunction()>7</div>
+			<div class="basicInside orangeBackground" onclick = eightFunction()>8</div>
+			<div class="basicInside purpleBackground" onclick = nineFunction()>9</div>
+			<div class="basicInside blueBackground">x</div>
+		</div>
+		<div class="basic">
+			<div class="basicInside greenBackground" onclick = fourFunction()>4</div>
+			<div class="basicInside orangeBackground" onclick = fiveFunction()>5</div>
+			<div class="basicInside purpleBackground" onclick = sixFunction()>6</div>
+			<div class="basicInside blueBackground">-</div>
+		</div>
+		<div class="basic">
+			<div class="basicInside greenBackground" id="one" onclick= oneFunction()>1</div>
+			<div class="basicInside orangeBackground" id="two" onclick = twoFunction()>2</div>
+			<div class="basicInside purpleBackground" id="three" onclick = threeFunction()>3</div>
+			<div class="basicInside blueBackground">+</div>
+		</div>
+		<div class="basic">
+			<div class="basicInside greenBackground zeroDiv" id="zero" onclick = zeroFunction()>0</div>
+			<div class="basicInside purpleBackground">.</div>
+			<div class="basicInside blueBackground">=</div>
+		</div>
+
+		<script>
+			var numberZeroOfClicks =0;
+			var numberOneOfClicks =0;
+			var numberTwoOfClicks=0;
+
+			
+
+
+			function zeroFunction(){
+				
+				numberZeroOfClicks+=1;
+				alert("Zero is clicked " + numberZeroOfClicks)
+			} 
+			function oneFunction(){
+				numberOneOfClicks+=1;
+				alert("One is clicked " + numberOneOfClicks)	
+			}
+			function twoFunction(){
+				numberTwoOfClicks ++;
+				alert("Two is clicked " + numberTwoOfClicks)
+				console.log(numberTwoOfClicks)
+			}
+			function threeFunction(){
+				alert("Three is clicked")
+			}
+			function fourFunction(){
+				alert("Four is clicked")
+			}
+			function fiveFunction(){
+				alert("Five is clicked")
+			}
+			function sixFunction(){
+				alert("Six is clicked")
+			}
+			function sevenFunction(){
+				alert("Seven is clicked")
+			}
+			function eightFunction(){
+				alert("Eight is clicked")
+			}
+			function nineFunction(){
+				alert("Nine is clicked")
+			}
+
+		</script>
+		 
+	</body>
+</html>

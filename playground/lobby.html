@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.aiden{
+				background-color: red;
+			}
+			#food{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="aiden">Hello World</p>
+		<p class="aiden" id="hi">I'm Jeff</p>
+		<p id="hi">I'm Martin</p>
+		<p id="hi">I'm Shawn</p>
+		<p id="hi">I'm Jia</p>
+
+		<button onclick="changeName()">Click Me</button>
+
+
+		<script>
+			
+			function changeName(){
+				var samsung = document.querySelectorAll("#hi")
+				console.log(samsung)
+				
+ 				
+			}
+
+			/*
+			1. you click "click me"
+			2. when "the button click me" is clicked, you run function, which is "changeName()"
+			3. the function is going to find a tag with the class of "food" 
+			4. that is going to find the "first" tag that has class of "food"
+			5. then, because of "innerHTML" part, you are going to chage the the conents to "I'm Aiden"
+
+			a && b == > they both have to be true tobe true. if eighter one is false, it will be automatically false. 
+			true && true => true 
+			false && true => false
+			true && false => flase
+			false && false => false
+
+			|| => if either one is true, it is going to be true. 
+			true or true => true
+			true or false => true
+			false or true = > true
+			false or false => false;
+			*/
+
+			
+
+		</script>
+	</body>
+</html>
+
+
